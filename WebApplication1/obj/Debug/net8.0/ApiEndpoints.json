@@ -1,0 +1,210 @@
+[
+  {
+    "ContainingType": "WebApplication1.Controllers.OwnedPokemonController",
+    "Method": "GetAll",
+    "RelativePath": "api/ownedpokemon",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PokemonName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PokemonNickName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PokemonNature",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PokemonType1",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PokemonType2",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsDecsending",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.OwnedPokemonController",
+    "Method": "GetById",
+    "RelativePath": "api/ownedpokemon/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.OwnedPokemonController",
+    "Method": "Create",
+    "RelativePath": "api/ownedpokemon/{pokemonId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pokemonId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pokemonDto",
+        "Type": "WebApplication1.DTOs.Pokemon.CapturePokemonDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.PokemonController",
+    "Method": "GetAll",
+    "RelativePath": "api/pokemon",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PokemonName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PokemonType1",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PokemonType2",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsDecsending",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.PokemonController",
+    "Method": "Create",
+    "RelativePath": "api/pokemon",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pokemonDto",
+        "Type": "WebApplication1.DTOs.Pokemon.CreatePokemonDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.PokemonController",
+    "Method": "GetById",
+    "RelativePath": "api/pokemon/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.AccountController",
+    "Method": "Register",
+    "RelativePath": "register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDTO",
+        "Type": "WebApplication1.DTOs.Account.RegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
